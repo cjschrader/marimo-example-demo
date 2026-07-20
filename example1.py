@@ -60,7 +60,7 @@ def _(data, plt):
     data.plot(kind="bar", x="category", y="value", legend=False)
     plt.title("Example 1 Values")
     plt.ylabel("Value")
-    plt.show()
+    plt.gca()
     return
 
 
