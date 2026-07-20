@@ -12,7 +12,7 @@ jobs:
     steps:
       # ... checkout and install dependencies
       - name: Export notebook
-        run: marimo export html-wasm notebook.py -o path/to/output --mode run
+        run: python -m marimo export html-wasm notebook.py -o path/to/output --mode run
  
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
