@@ -26,7 +26,7 @@ jobs:
           pip install marimo
           
       - name: Export notebook
-        run: python -m marimo export html-wasm notebook.py -o path/to/output --mode run
+        run: python -m marimo export html-wasm example1.py -o path/to/output --mode run
  
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
